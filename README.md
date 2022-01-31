@@ -32,11 +32,18 @@ Install the [X-Windows Client](https://oit.nd.edu/services/software/software-dow
 Getting Started
 ---------------
 
-Download the following files and put them in your working directory:
+First clone this repository to your local machine:
 
-*   [gfx.c](gfx.c) (the source file: read if you like, but don't change)
-*   [gfx.h](gfx.h) (the header file: read if you like, but don't change)
-*   [example.c](example.c) (an example program: go ahead and change this)
+```
+git clone https://github.com/dthain/gfx
+```
+
+Then move into that directory:
+```
+cd gfx
+```
+
+Note that `gfx.h` and `gfx.c` constitute the library itself, which you are welcome to read, but should not change for a course assignment.  `example.c` is an example program that uses the library, and you can change that as much as you like.
 
 To compile a program that uses the gfx library, you need to use the following command, which compiles your program with gfx.c then adds the X11 and math libraries. (X11 is short for the X Window System used on Unix based machines.)
 
