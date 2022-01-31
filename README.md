@@ -13,13 +13,17 @@ This library runs on Unix machines with the X11 Windowing System. At Notre Dame,
 
 There is nothing to install, just use ssh with the X forwarding option (-Y) enabled:
 
+```
 ssh -Y YOURNAME@studentXX.cse.nd.edu
+```
 
 ### From a Mac Laptop or Desktop
 
 Install the [XQuartz](https://www.xquartz.org/) software on your laptop. Start the XQuartz application. Then, open a Terminal and connect to one of the student machines:
 
+```
 ssh -Y YOURNAME@studentXX.cse.nd.edu
+```
 
 ### From a Windows Laptop or Desktop
 
@@ -141,7 +145,7 @@ int gfx_event_waiting();
 gfx\_wait causes the program to wait until something is pressed, which can be inconvenient in a real-time program. To avoid this, call gfx\_event\_waiting, which returns true if an event (key or button press) has occurred, otherwise returns false immediately. If it returns true, then you can call gfx\_wait to retrieve the event without waiting.
 
 ```
-void gfx\_flush();
+void gfx_flush();
 ```
 
 gfx\_flush flushes all output to the graphics window. This forces all previous drawing commands to take effect. Output is normally flushed after a called to gfx\_wait. If your program does not call gfx\_wait then you need to call gfx\_flush after drawing to the screen.
